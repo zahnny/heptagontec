@@ -89,9 +89,9 @@
                     message: fullMessage,
                     subject: subjectLine
                 }).then(function() {
-                    alert('✅ Your message has been sent successfully!');
+                    alert('Your message has been sent.');
                 }, function(error) {
-                    alert('❌ Failed to send the message. Please try again later.');
+                    alert('Failed to send the message. Please try again later.');
                     console.log(error);
                 });
             });
