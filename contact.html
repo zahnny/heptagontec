@@ -12,7 +12,7 @@
         nav a { color: #007f80; text-decoration: none; margin-left: 20px; font-size: 16px; }
         nav a:hover { text-decoration: underline; }
         .content {
-            padding: 20px 20px; /* Moved form even closer to the menu bar */
+            padding: 20px 20px;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
@@ -69,6 +69,25 @@
             .disclaimer { margin: 0 10px; padding: 20px; }
         }
     </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('c7_Qz-0vnnwc2Yx50'); // Public Key
+        })();
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_i7qxtj5', 'Heptec', this)
+                    .then(function() {
+                        alert('✅ Your message has been sent successfully!');
+                    }, function(error) {
+                        alert('❌ Failed to send the message. Please try again later.');
+                        console.log(error);
+                    });
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -85,10 +104,7 @@
     <main class="content">
         <div class="contact-form">
             <p>Reach out for inquiries or tailored investment solutions.</p>
-            <form action="https://formsubmit.co/john.lee@heptagontec.com" method="POST">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="New Contact Submission from Heptagon Technologies">
-                <input type="hidden" name="_next" value="https://heptagontec.com/thank-you.html">
+            <form id="contactForm">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
