@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Heptagon Technologies</title>
+    <title>Contact - Heptagon Technologies</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; background-color: #ffffff; }
         header { display: flex; align-items: center; justify-content: space-between; padding: 10px 40px; background-color: #ffffff; }
@@ -55,17 +55,17 @@
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
     <main class="content">
         <div class="contact-form">
-            <h1>Contact Us</h1>
+            <h1>Contact</h1>
             <p>Get in touch with us for inquiries or partnership opportunities.</p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="5" placeholder="Your Message" required></textarea>
+            <form action="mailto:john.lee@heptagontec.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
