@@ -5,113 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heptagon Technologies</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background-color: #f9f9f9;
             color: #333;
-            line-height: 1.6;
+            background-color: #ffffff;
         }
         header {
-            background-color: #40e0d0;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        nav ul {
-            list-style: none;
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background-color: #ffffff; /* Changed to white */
+        }
+        header img {
+            height: 50px;
         }
         nav a {
+            color: #007f80; /* Turquoise shade for text */
             text-decoration: none;
-            color: white;
-            font-weight: bold;
+            margin: 0 15px;
+            font-size: 16px;
         }
-        section {
-            padding: 40px 20px;
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #007f80; /* Turquoise shade from the original menu bar */
+            color: white;
+        }
+        .hero-section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        .section {
+            padding: 60px 40px;
             text-align: center;
         }
-        .container {
-            max-width: 1200px;
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            max-width: 600px;
             margin: 0 auto;
         }
-        footer {
-            background-color: #333;
+        .contact-section input, .contact-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-section button {
+            padding: 10px 20px;
+            background-color: #007f80;
             color: white;
-            text-align: center;
-            padding: 20px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
-        .service-card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-        }
-        @media (min-width: 768px) {
-            .services-container {
-                display: flex;
-                justify-content: space-around;
-            }
+        .contact-section button:hover {
+            background-color: #005f5f;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Heptagon Technologies</h1>
-        <p>Innovative Self-Funded Investment Solutions</p>
+        <img src="Heptec CI 1.png" alt="Heptagon Technologies Logo">
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
         </nav>
     </header>
 
-    <section id="home" class="container">
-        <h2>Welcome to Heptagon Technologies</h2>
-        <p>Your trusted partner in self-funded investment strategies and cutting-edge financial solutions.</p>
+    <section id="home" class="hero-section">
+        <h1>Welcome to Heptagon Technologies</h1>
+        <p>Innovative Self-Funded Investment Solutions</p>
     </section>
 
-    <section id="about" class="container">
+    <section id="about" class="section">
         <h2>About Us</h2>
-        <p>Heptagon Technologies focuses exclusively on self-funded investment activities, leveraging innovative technologies and data-driven strategies to maximize returns. Our team is dedicated to delivering excellence and fostering growth in the financial ecosystem.</p>
+        <p>Heptagon Technologies is a leading self-funded investment company based in Gimpo, South Korea. We specialize in delivering superior returns through advanced trading algorithms and data-driven investment strategies.</p>
     </section>
 
-    <section id="services" class="container">
+    <section id="services" class="section" style="background-color: #f9f9f9;">
         <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="service-card">
-                <h3>Self-Funded Investment</h3>
-                <p>We deploy capital strategically into promising markets using proprietary investment models.</p>
-            </div>
-            <div class="service-card">
-                <h3>Algorithmic Trading</h3>
-                <p>Development and optimization of algorithmic trading systems for enhanced performance.</p>
-            </div>
-            <div class="service-card">
-                <h3>Market Analysis</h3>
-                <p>Comprehensive market analysis leveraging real-time data and predictive insights.</p>
-            </div>
-        </div>
+        <p>We focus exclusively on self-funded investment activities, leveraging cutting-edge technologies and deep market analysis to maximize profitability and growth.</p>
     </section>
 
-    <section id="contact" class="container">
+    <section id="contact" class="section contact-section">
         <h2>Contact Us</h2>
-        <p>Have questions or want to collaborate? Reach out to us at:</p>
-        <p>Email: <a href="mailto:contact@heptagontec.com">contact@heptagontec.com</a></p>
+        <p>Have questions? Get in touch with us today.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Heptagon Technologies. All Rights Reserved.</p>
+    <footer class="footer">
+        <p>&copy; 2025 Heptagon Technologies. All rights reserved.</p>
     </footer>
 </body>
 </html>
