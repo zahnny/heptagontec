@@ -3,45 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Heptagon Technologies</title>
+    <title>Heptagon Technologies</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; background-color: #000000; }
-        header { display: flex; align-items: center; justify-content: space-between; padding: 10px 40px; background-color: #ffffff; }
-        header a img { height: 60px; width: auto; display: block; }
-        nav { display: flex; align-items: center; }
-        nav a { color: #007f80; text-decoration: none; margin-left: 20px; font-size: 16px; }
-        nav a:hover { text-decoration: underline; }
-        .content { padding: 80px 20px; text-align: center; background-color: #f9f9f9; }
-        .footer { text-align: center; padding: 20px; background-color: #f1f1f1; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #ffffff;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;
+            background-color: #ffffff;
+        }
+        header a img {
+            height: 60px;
+            width: auto;
+            display: block;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: #007f80;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #007f80; /* Turquoise background restored */
+            color: white;
+        }
+        .large-heading {
+            font-size: 72px;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
         .disclaimer {
             text-align: justify;
-            padding: 20px;
+            padding: 30px;
             background-color: #000000;
             font-size: 12px;
             color: #ffffff;
-            border-radius: 0;
-            margin: 0;
-            box-shadow: none;
-            border: none;
-            width: 100%;
-        }
-        .address {
-            background-color: transparent;
-            box-shadow: none;
-            border: none;
-            padding: 0;
+            border-radius: 10px;
+            margin: 40px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border: 1px solid #333;
+            width: calc(100% - 40px);
+            line-height: 1.6;
+            max-width: 1000px;
         }
         @media (max-width: 768px) {
-            header { flex-direction: column; align-items: center; text-align: center; }
-            header a img { margin-bottom: 10px; }
-            nav { flex-direction: column; gap: 10px; }
-            .disclaimer { margin: 0; }
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            header a img {
+                margin-bottom: 10px;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .disclaimer {
+                margin: 20px;
+                padding: 20px;
+                border-radius: 5px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="https://zahnny.github.io/heptagontec/Heptec%20CI%203.png" alt="Logo"></a>
+        <a href="index.html">
+            <img src="https://zahnny.github.io/heptagontec/Heptec%20CI%203.png" alt="Heptagon Technologies Logo">
+        </a>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -49,13 +99,16 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+
     <main class="content">
-        <h1>Our Services</h1>
-        <p>We provide self-funded investment strategies, leveraging technology and market insights for optimal growth.</p>
+        <h1 class="large-heading">Heptagon Technologies</h1>
+        <h2>Innovative Investment Solutions Provider</h2>
     </main>
+
     <footer class="footer">
         <p>&copy; 2025 Heptagon Technologies. All rights reserved.</p>
     </footer>
+
     <div class="disclaimer">
         <p>Disclaimer: The information provided on this website is for general informational purposes only and does not constitute financial, investment, or legal advice. All information is provided in good faith; however, Heptagon Technologies makes no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, or completeness of any information. Under no circumstance shall Heptagon Technologies have any liability for any loss or damage incurred as a result of the use of the site or reliance on any information provided. Investment involves risk and may result in partial or total loss of capital. Past performance is not indicative of future results. Always seek the advice of a qualified financial advisor with any questions you may have regarding financial decisions.</p>
     </div>
