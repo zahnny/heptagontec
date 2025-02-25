@@ -44,7 +44,7 @@
             text-decoration: underline;
         }
         .content {
-            padding: 40px 20px; /* Reduced padding for less space */
+            padding: 40px 20px;
             text-align: center;
             background-color: rgb(120, 30, 20);
             color: white;
@@ -56,11 +56,22 @@
         .section-title {
             font-size: 36px;
             font-weight: bold;
-            margin-top: 20px; /* Reduced top margin */
+            margin-top: 35px; /* Slightly increased top margin for better spacing */
+            margin-bottom: 15px; /* Slightly increased bottom margin */
+        }
+        .section-content p:first-of-type {
+            margin-top: -5px; /* Adjusted space after Our Mission */
+        }
+        .section-content h2 + p {
+            margin-top: 0px; /* Slightly increased space between section title and paragraph */
+        }
+        .section-content strong {
+            display: block;
+            margin-top: 5px; /* Slightly increased space between Our Business and Finance */
         }
         .section-content {
             font-size: 18px;
-            margin-top: 10px; /* Reduced margin for tighter spacing */
+            margin-top: 10px;
             text-align: left;
             max-width: 800px;
             margin-left: auto;
@@ -111,10 +122,15 @@
                 font-size: 48px;
             }
             .content {
-                padding: 30px 20px; /* Adjusted padding for mobile */
+                padding: 30px 20px;
             }
             .section-title {
-                margin-top: 10px; /* Reduced margin for mobile */
+                margin-top: 30px; /* Adjusted margin for mobile */
+                margin-bottom: 12px; /* Adjusted margin for mobile */
+            }
+            .section-content p:first-of-type,
+            .section-content h2 + p {
+                margin-top: -4px; /* Balanced spacing for mobile */
             }
         }
     </style>
