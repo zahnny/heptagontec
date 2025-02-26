@@ -5,43 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Heptagon Technologies</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; background-color: #000000; }
-        header { display: flex; align-items: center; justify-content: space-between; padding: 10px 40px; background-color: #ffffff; }
-        header a img { height: 60px; width: auto; display: block; }
-        nav { display: flex; align-items: center; }
-        nav a { color: #007f80; text-decoration: none; margin-left: 20px; font-size: 16px; }
-        nav a:hover { text-decoration: underline; }
-        .content { padding: 80px 20px; text-align: center; background-color: #f9f9f9; }
-        .footer { text-align: center; padding: 20px; background-color: #f1f1f1; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #ffffff;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px 20px;
+            background-color: #ffffff;
+        }
+        header a img {
+            height: 60px;
+            width: auto;
+            display: block;
+            align-self: flex-start;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            overflow-x: auto;
+            width: 100%;
+        }
+        nav a {
+            color: #d4b159;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            white-space: nowrap;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f1d07a;
+            color: #333;
+        }
+        .large-heading {
+            font-size: 72px;
+            font-weight: bold;
+        }
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+        .section-content {
+            font-size: 18px;
+            margin-top: 10px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
         .disclaimer {
             text-align: justify;
-            padding: 20px;
+            padding: 30px;
             background-color: #000000;
             font-size: 12px;
             color: #ffffff;
-            border-radius: 0;
-            margin: 0;
-            box-shadow: none;
-            border: none;
             width: 100%;
-        }
-        .address {
-            background-color: transparent;
-            box-shadow: none;
-            border: none;
-            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
         }
         @media (max-width: 768px) {
-            header { flex-direction: column; align-items: center; text-align: center; }
-            header a img { margin-bottom: 10px; }
-            nav { flex-direction: column; gap: 10px; }
-            .disclaimer { margin: 0; }
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header a img {
+                margin-bottom: 10px;
+                align-self: flex-start;
+            }
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+            .large-heading {
+                font-size: 48px;
+            }
+            .content {
+                padding: 30px 20px;
+            }
+            .section-title {
+                margin-top: 30px;
+                margin-bottom: 12px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="https://zahnny.github.io/heptagontec/Heptec%20CI%203.png" alt="Logo"></a>
+        <a href="index.html">
+            <img src="https://zahnny.github.io/heptagontec/Heptec%20CI%203.png" alt="Heptagon Technologies Logo">
+        </a>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -49,13 +121,47 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+
     <main class="content">
-        <h1>Our Services</h1>
-        <p>We provide self-funded investment strategies, leveraging technology and market insights for optimal growth.</p>
+        <div class="section-content">
+            <h2 class="section-title">Our Services</h2>
+
+            <h3>Finance</h3>
+            <p>We provide comprehensive financial services through two key approaches designed to meet diverse client needs:</p>
+
+            <h4>1) Bottom-up Approach:</h4>
+            <ul>
+                <li><strong>Market Analysis:</strong> Daily, weekly, and monthly market wrap-ups with actionable insights.</li>
+                <li><strong>Company Insights:</strong> In-depth company analysis identifying growth opportunities and risks.</li>
+                <li><strong>Client-Focused Communication:</strong> Seamless conference call arrangements with expert translation services.</li>
+                <li><strong>Investor Engagement:</strong> Reverse roadshows designed for strategic investor interactions.</li>
+                <li><strong>Performance Forecasts:</strong> Comprehensive quarterly financial reviews and forward-looking projections.</li>
+                <li><strong>Data-driven Trends:</strong> Monthly export data analysis to guide investment decisions.</li>
+                <li><strong>Client Portfolio Monitoring:</strong> Regular updates on client interests and holdings for transparency.</li>
+                <li><strong>Global Fundraising:</strong> Marketing and fundraising initiatives tailored for diverse global markets.</li>
+                <li><strong>Portfolio Strategy:</strong> Personalized portfolio management advice to optimize performance.</li>
+            </ul>
+
+            <h4>2) Quantitative Approach:</h4>
+            <ul>
+                <li><strong>Algorithmic Trading Solutions:</strong> Custom-built trading engines incorporating various strategies, including event-driven, trend-change, and momentum trading.</li>
+                <li><strong>Platform Integration:</strong> Deployment of tailored trading algorithms across major brokerage platforms for seamless execution.</li>
+            </ul>
+
+            <h3>Clean Energy</h3>
+            <p>Driven by a commitment to sustainability, we support the transition to cleaner energy through:</p>
+            <ul>
+                <li><strong>Renewable Energy R&D:</strong> Developing cutting-edge technologies to advance renewable energy adoption.</li>
+                <li><strong>Innovative Solutions:</strong> Creating and distributing software and hardware products focused on renewable energy optimization and carbon capture efficiency.</li>
+                <li><strong>Green Investment Support:</strong> Fundraising and financial assistance for impactful green energy projects worldwide.</li>
+            </ul>
+        </div>
     </main>
+
     <footer class="footer">
         <p>&copy; 2025 Heptagon Technologies. All rights reserved.</p>
     </footer>
+
     <div class="disclaimer">
         <p>Disclaimer: The information provided on this website is for general informational purposes only and does not constitute financial, investment, or legal advice. All information is provided in good faith; however, Heptagon Technologies makes no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, or completeness of any information. Under no circumstance shall Heptagon Technologies have any liability for any loss or damage incurred as a result of the use of the site or reliance on any information provided. Investment involves risk and may result in partial or total loss of capital. Past performance is not indicative of future results. Always seek the advice of a qualified financial advisor with any questions you may have regarding financial decisions.</p>
     </div>
