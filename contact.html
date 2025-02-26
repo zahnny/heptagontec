@@ -6,9 +6,9 @@
     <title>Contact - Heptagon Technologies</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; background-color: #ffffff; }
-        header { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; background-color: #ffffff; width: 100%; box-sizing: border-box; }
-        header a img { height: 50px; width: auto; display: block; margin-right: 20px; }
-        nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 20px; width: 100%; }
+        header { display: flex; align-items: center; justify-content: space-between; padding: 10px 40px; background-color: #ffffff; width: 100%; box-sizing: border-box; }
+        header a img { height: 60px; width: auto; display: block; }
+        nav { display: flex; align-items: center; gap: 25px; }
         nav a { color: #007f80; text-decoration: none; font-size: 18px; }
         nav a:hover { text-decoration: underline; }
         .content {
@@ -36,13 +36,13 @@
         .address {
             flex: 1;
             max-width: 500px;
-            margin-left: 50px;
+            margin-left: 30px;
             background-color: transparent;
             padding: 10px;
             text-align: left;
             border: none;
             box-shadow: none;
-            margin-top: 10px;
+            margin-top: 0;
         }
         .address h2 {
             color: #007f80;
@@ -74,13 +74,13 @@
             line-height: 1.6;
         }
         @media (max-width: 768px) {
-            header { flex-direction: row; align-items: center; justify-content: space-between; }
-            header a img { height: 40px; margin-right: 0; }
-            nav { width: auto; justify-content: flex-end; gap: 15px; }
+            header { flex-direction: row; align-items: center; justify-content: space-between; padding: 15px 20px; }
+            header a img { height: 50px; }
+            nav { width: auto; justify-content: flex-end; gap: 20px; }
             .content { flex-direction: column; align-items: center; }
             .address { margin-left: 0; margin-top: 20px; text-align: center; }
             .contact-form { max-width: 100%; }
-            .contact-form p { white-space: normal; }
+            .contact-form p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
             .footer, .disclaimer { width: 100%; }
             .disclaimer { padding: 20px; }
         }
