@@ -180,12 +180,12 @@
 
                 const formData = new FormData(this);
                 const subjectLine = `New message from ${formData.get("name")}`;
-                const fullMessage = `\nName: ${formData.get("name")}\nEmail: ${formData.get("email")}\n\nMessage:\n${formData.get("message")}`;
+                const fullMessage = `Name: ${formData.get("name")}\nEmail: ${formData.get("email")}\nMessage: ${formData.get("message")}`;
 
                 emailjs.send('service_i7qxtj5', 'Heptec', {
                     name: formData.get("name"),
                     email: formData.get("email"),
-                    message: formData.get("message"),
+                    message: fullMessage,
                     subject: subjectLine
                 }).then(function() {
                     alert('Your message has been sent.');
